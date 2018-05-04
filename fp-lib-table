@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name audio_connector_3.5mm)(type KiCad)(uri /home/yovan/Documents/electronics/custom_kicad_libraries/3.5mm_audio_jack)(options "")(descr ""))
+  (lib (name potentiometer_pinnumbers)(type KiCad)(uri /home/yovan/Documents/electronics/custom_kicad_libraries/potentiometer_pinnumbers.pretty)(options "")(descr ""))
+  (lib (name minified_lm386_headphones_amplifier)(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
+)
