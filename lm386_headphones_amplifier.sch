@@ -98,32 +98,10 @@ Vcc
 Text GLabel 4700 3125 1    60   Input ~ 0
 Vcc
 $Comp
-L CP1 C1
-U 1 1 5AD1E1CD
-P 4600 2450
-F 0 "C1" H 4625 2550 50  0000 L CNN
-F 1 "100uF" H 4625 2350 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 4600 2450 50  0001 C CNN
-F 3 "" H 4600 2450 50  0000 C CNN
-	1    4600 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C2
-U 1 1 5AD1E3E5
-P 4600 4250
-F 0 "C2" H 4625 4350 50  0000 L CNN
-F 1 "100uF" H 4625 4150 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 4600 4250 50  0001 C CNN
-F 3 "" H 4600 4250 50  0000 C CNN
-	1    4600 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C5
+L CP1 C4
 U 1 1 5AD1E933
 P 5300 1900
-F 0 "C5" V 5450 1850 50  0000 L CNN
+F 0 "C4" V 5450 1850 50  0000 L CNN
 F 1 "1000uF" V 5225 1525 50  0000 L CNN
 F 2 "Capacitors_ThroughHole:C_Radial_D10_L13_P5" H 5300 1900 50  0001 C CNN
 F 3 "" H 5300 1900 50  0000 C CNN
@@ -131,10 +109,10 @@ F 3 "" H 5300 1900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CP1 C6
+L CP1 C5
 U 1 1 5AD1EA62
 P 5300 3600
-F 0 "C6" V 5450 3550 50  0000 L CNN
+F 0 "C5" V 5450 3550 50  0000 L CNN
 F 1 "1000uF" V 5225 3225 50  0000 L CNN
 F 2 "Capacitors_ThroughHole:C_Radial_D10_L13_P5" H 5300 3600 50  0001 C CNN
 F 3 "" H 5300 3600 50  0000 C CNN
@@ -143,24 +121,13 @@ F 3 "" H 5300 3600 50  0000 C CNN
 $EndComp
 Text Notes 875  725  0    60   ~ 0
 Power supply
-$Comp
-L D_Small D1
-U 1 1 5AD1FE9A
-P 1700 975
-F 0 "D1" H 1650 1055 50  0000 L CNN
-F 1 "1N4004" H 1550 895 50  0000 L CNN
-F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" V 1700 975 50  0001 C CNN
-F 3 "" V 1700 975 50  0000 C CNN
-	1    1700 975 
-	-1   0    0    1   
-$EndComp
 Text GLabel 2350 975  2    60   Input ~ 0
 Vcc
 $Comp
-L CP1 C7
+L CP1 C1
 U 1 1 5AD1EE71
 P 2200 1125
-F 0 "C7" H 2225 1225 50  0000 L CNN
+F 0 "C1" H 2225 1225 50  0000 L CNN
 F 1 "100uF" H 2225 1025 50  0000 L CNN
 F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 2200 1125 50  0001 C CNN
 F 3 "" H 2200 1125 50  0000 C CNN
@@ -190,10 +157,10 @@ F 3 "" H 5100 3875 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C4
+L C_Small C3
 U 1 1 5AE8B25F
 P 5100 4250
-F 0 "C4" H 5110 4320 50  0000 L CNN
+F 0 "C3" H 5110 4320 50  0000 L CNN
 F 1 "47nF" H 5110 4170 50  0000 L CNN
 F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5100 4250 50  0001 C CNN
 F 3 "" H 5100 4250 50  0000 C CNN
@@ -201,10 +168,10 @@ F 3 "" H 5100 4250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L C_Small C2
 U 1 1 5AE8B2E9
 P 5100 2500
-F 0 "C3" H 5110 2570 50  0000 L CNN
+F 0 "C2" H 5110 2570 50  0000 L CNN
 F 1 "47nF" H 5110 2420 50  0000 L CNN
 F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5100 2500 50  0001 C CNN
 F 3 "" H 5100 2500 50  0000 C CNN
@@ -255,10 +222,6 @@ $EndComp
 Wire Wire Line
 	2575 2475 2575 2300
 Wire Wire Line
-	2575 2300 3300 2300
-Wire Wire Line
-	2550 2700 3300 2700
-Wire Wire Line
 	2900 2500 3300 2500
 Wire Wire Line
 	3750 2400 3875 2400
@@ -279,20 +242,14 @@ Wire Wire Line
 Wire Wire Line
 	6425 2700 6425 3600
 Wire Wire Line
-	4600 2200 4600 2300
-Wire Wire Line
 	4400 2000 4400 2800
 Connection ~ 4400 2650
 Wire Wire Line
 	4700 2650 4700 2200
-Connection ~ 4600 2650
 Connection ~ 4700 2650
-Wire Wire Line
-	4600 3900 4600 4100
 Wire Wire Line
 	4400 4500 5100 4500
 Connection ~ 4400 4500
-Connection ~ 4600 4500
 Connection ~ 4700 4500
 Wire Wire Line
 	3750 2800 3900 2800
@@ -305,7 +262,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 3700 4400 4675
 Wire Wire Line
-	1400 975  1600 975 
+	1400 975  2350 975 
 Wire Wire Line
 	2900 2600 2900 2500
 Wire Wire Line
@@ -314,10 +271,6 @@ Wire Wire Line
 	3225 2900 3225 3075
 Wire Wire Line
 	4700 1400 4700 1600
-Wire Wire Line
-	4600 2600 4600 2650
-Wire Wire Line
-	4600 4400 4600 4500
 Wire Wire Line
 	4700 3900 4700 4500
 Wire Wire Line
@@ -334,8 +287,6 @@ Wire Notes Line
 	3100 625  800  625 
 Wire Wire Line
 	4700 3300 4700 3125
-Wire Wire Line
-	1800 975  2350 975 
 Wire Wire Line
 	1575 1475 2300 1475
 Wire Wire Line
@@ -375,4 +326,36 @@ Wire Wire Line
 NoConn ~ 6925 2600
 NoConn ~ 6925 2800
 NoConn ~ 6925 3000
+NoConn ~ 4600 2200
+NoConn ~ 4600 3900
+$Comp
+L C_Small C7
+U 1 1 5AEF6926
+P 2950 2300
+F 0 "C7" H 2960 2370 50  0000 L CNN
+F 1 "C_Small" H 2960 2220 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 2950 2300 50  0001 C CNN
+F 3 "" H 2950 2300 50  0000 C CNN
+	1    2950 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 5AEF69B1
+P 2775 2700
+F 0 "C6" H 2785 2770 50  0000 L CNN
+F 1 "C_Small" H 2785 2620 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 2775 2700 50  0001 C CNN
+F 3 "" H 2775 2700 50  0000 C CNN
+	1    2775 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2575 2300 2850 2300
+Wire Wire Line
+	3050 2300 3300 2300
+Wire Wire Line
+	2550 2700 2675 2700
+Wire Wire Line
+	2875 2700 3300 2700
 $EndSCHEMATC
