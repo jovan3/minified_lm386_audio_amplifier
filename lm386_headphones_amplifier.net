@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/yovan/Documents/electronics/kicad/minified_lm386_headphones_amplifier/lm386_headphones_amplifier.sch)
-    (date "Sun 06 May 2018 23:57:59 EEST")
+    (date "Mon 07 May 2018 20:26:07 EEST")
     (tool "Eeschema 4.0.2+dfsg1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -77,7 +77,7 @@
       (tstamp 5AE8B2E9))
     (comp (ref P1)
       (value USB_B)
-      (footprint Connect:USB_Micro-B)
+      (footprint Connect:USB_B)
       (libsource (lib conn) (part USB_B))
       (sheetpath (names /) (tstamps /))
       (tstamp 5AE8C004))
